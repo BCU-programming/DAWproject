@@ -8,11 +8,11 @@
   --color-red: #ff0000;
 
   /* Font size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
+  --font-large: 60px;
+  --font-medium: 50px;
+  --font-regular: 40px;
+  --font-small: 30px;
+  --font-micro: 20px;
 
   /* Font weight */
   --weight-bold: 700;
