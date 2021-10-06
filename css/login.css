@@ -11,8 +11,8 @@
   align-items: center;
   margin: auto;
   margin-top: 200px;
-  width: 550px;
-  height: 350px;
+  width: 650px;
+  height: 450px;
   font-size: var(--font-micro);
   background-color: rgb(255, 255, 255);
 }
@@ -24,11 +24,22 @@
 }
 
 .login_id {
-  margin: 30px 0px 30px 0px;
+  margin: 70px 0px 30px 0px;
+}
+
+.login_pw {
+  margin: 0px 0px 70px 0px;
 }
 
 .login_text {
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
+}
+
+#ID {
+  margin: 0px 10px 0px 16px;
+}
+#PW {
+  margin: 0px 10px 0px 10px;
 }
 
 .lock_img,
@@ -40,4 +51,16 @@
 .login_btn {
   height: 50px;
   width: 100px;
+}
+
+.login_btn {
+  background-color: var(--color-blue-green);
+  color: var(--color-white);
+  border: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.login_btn:hover {
+  opacity: 1;
 }
