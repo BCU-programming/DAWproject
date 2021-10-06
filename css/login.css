@@ -21,6 +21,8 @@
 .login_pw {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
 }
 
 .login_id {
@@ -35,6 +37,11 @@
   font-size: var(--font-regular);
 }
 
+.id_text,
+.pw_text {
+  font-size: var(--font-micro);
+}
+
 #ID {
   margin: 0px 10px 0px 16px;
 }
@@ -42,10 +49,26 @@
   margin: 0px 10px 0px 10px;
 }
 
+#ID,
+#PW {
+  border: 0px;
+  font-size: var(--font-micro);
+}
+
+#ID:focus,
+#PW:focus {
+  outline: none;
+}
+
+#ID::placeholder,
+#PW::placeholder {
+  font-size: var(--font-micro);
+}
+
 .lock_img,
 .key_img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .login_btn {
@@ -59,6 +82,7 @@
   border: none;
   opacity: 0.6;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
 .login_btn:hover {
