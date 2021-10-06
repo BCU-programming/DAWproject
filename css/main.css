@@ -59,6 +59,12 @@ input::placeholder {
   height: 70px;
   border: 0px;
   background: var(--color-blue-green);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.search_button:hover {
+  opacity: 0.6;
 }
 
 .search_icon {
@@ -75,14 +81,39 @@ input::placeholder {
   top: 150px;
 }
 
+.instagram_logo {
+  display: flex;
+  justify-content: center;
+}
+
 .insta_logo {
   width : 50px;
   height: 50px;
-  margin-right: 20px;
+}
+
+.su {
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .copyright {
   font-family: 'Georama', sans-serif;
+  color: var(--color-white);
+}
+
+.login_join_info {
+  display: flex;
+  
+}
+
+.login_join_info > p {
+  color: var(--color-white);
+  margin-right: 15px;
+}
+
+
+a:link, a:visited{
+  margin-right: 20px;
+  text-decoration: none;
   color: var(--color-white);
 }
