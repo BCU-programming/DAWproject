@@ -13,79 +13,82 @@
   margin-top: 200px;
   margin-bottom: 200px;
   width: 650px;
-  height: 1000px;
+  height: 900px;
   font-size: var(--font-micro);
   background-color: rgb(255, 255, 255);
 }
 
 .join_id,
-.join_pw {
+.join_pw,
+.join_name,
+.join_phone,
+.join_email {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid black;
   justify-content: space-around;
-}
-
-.join_id {
-  margin: 70px 0px 30px 0px;
-}
-
-.join_pw {
-  margin: 0px 0px 70px 0px;
+  margin-bottom: 70px;
 }
 
 .join_text {
   font-size: var(--font-regular);
+  margin-bottom: 120px;
 }
 
 .id_text,
-.pw_text {
+.pw_text,
+.name_text,
+.phone_text,
+.email_text {
   font-size: var(--font-micro);
 }
 
 #ID {
-  margin: 0px 10px 0px 16px;
+  margin: 0px 20px 0px 16px;
 }
 #PW {
   margin: 0px 10px 0px 10px;
 }
 
 #ID,
-#PW {
+#PW,
+#name,
+#phone,
+#email {
   border: 0px;
   font-size: var(--font-micro);
+  margin-left: 20px;
 }
 
 #ID:focus,
-#PW:focus {
+#PW:focus,
+#name:focus,
+#phone:focus,
+#email:focus {
   outline: none;
 }
 
 #ID::placeholder,
-#PW::placeholder {
+#PW::placeholder,
+#name::placeholder,
+#phone::placeholder,
+#email::placeholder {
   font-size: var(--font-micro);
 }
 
-.lock_img,
-.key_img {
-  width: 20px;
-  height: 20px;
-}
-
-.login_btn {
+.join_btn {
   height: 50px;
   width: 100px;
-}
-
-.login_btn {
   background-color: var(--color-blue-green);
-  color: var(--color-white);
   border: none;
+  color: var(--color-white);
   opacity: 0.6;
   transition: 0.3s;
   border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
 }
 
-.login_btn:hover {
+.join_btn:hover {
   opacity: 1;
 }

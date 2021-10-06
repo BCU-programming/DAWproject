@@ -74,15 +74,13 @@
 .login_btn {
   height: 50px;
   width: 100px;
-}
-
-.login_btn {
   background-color: var(--color-blue-green);
   color: var(--color-white);
   border: none;
   opacity: 0.6;
   transition: 0.3s;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .login_btn:hover {
