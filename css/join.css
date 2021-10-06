@@ -1,0 +1,91 @@
+.hamberger_img {
+  width: 25px;
+  height: 25px;
+  margin: 7.5px;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 650px;
+  height: 1000px;
+  font-size: var(--font-micro);
+  background-color: rgb(255, 255, 255);
+}
+
+.join_id,
+.join_pw {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
+}
+
+.join_id {
+  margin: 70px 0px 30px 0px;
+}
+
+.join_pw {
+  margin: 0px 0px 70px 0px;
+}
+
+.join_text {
+  font-size: var(--font-regular);
+}
+
+.id_text,
+.pw_text {
+  font-size: var(--font-micro);
+}
+
+#ID {
+  margin: 0px 10px 0px 16px;
+}
+#PW {
+  margin: 0px 10px 0px 10px;
+}
+
+#ID,
+#PW {
+  border: 0px;
+  font-size: var(--font-micro);
+}
+
+#ID:focus,
+#PW:focus {
+  outline: none;
+}
+
+#ID::placeholder,
+#PW::placeholder {
+  font-size: var(--font-micro);
+}
+
+.lock_img,
+.key_img {
+  width: 20px;
+  height: 20px;
+}
+
+.login_btn {
+  height: 50px;
+  width: 100px;
+}
+
+.login_btn {
+  background-color: var(--color-blue-green);
+  color: var(--color-white);
+  border: none;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.login_btn:hover {
+  opacity: 1;
+}
