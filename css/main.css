@@ -1,30 +1,7 @@
-:root {
-  /* Color */
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-light-yellow: #ffcb45;
-  --color-dark-yellow: #f5a962;
-  --color-blue-green: #125d98;
-  --color-red: #ff0000;
-
-  /* Font size */
-  --font-large: 60px;
-  --font-medium: 50px;
-  --font-regular: 40px;
-  --font-small: 30px;
-  --font-micro: 20px;
-
-  /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 400;
-}
-
 body {
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: var(--font-regular)
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: var(--font-regular);
 }
-
 
 .main_container {
   margin: auto;
@@ -36,7 +13,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 
 .search_text {
   width: 500px;
@@ -50,7 +26,7 @@ body {
 }
 
 input::placeholder {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-size: var(--font-micro);
 }
 
@@ -87,7 +63,7 @@ input::placeholder {
 }
 
 .insta_logo {
-  width : 50px;
+  width: 50px;
   height: 50px;
 }
 
@@ -97,13 +73,12 @@ input::placeholder {
 }
 
 .copyright {
-  font-family: 'Georama', sans-serif;
+  font-family: "Georama", sans-serif;
   color: var(--color-white);
 }
 
 .login_join_info {
   display: flex;
-  
 }
 
 .login_join_info > p {
@@ -111,8 +86,8 @@ input::placeholder {
   margin-right: 15px;
 }
 
-
-a:link, a:visited{
+a:link,
+a:visited {
   margin-right: 20px;
   text-decoration: none;
   color: var(--color-white);
