@@ -1,3 +1,9 @@
+body {
+  background: url("../imgs/배경.jpg") no-repeat;
+  background-size: cover;
+  margin: 0%;
+}
+
 .hamberger_img {
   width: 25px;
   height: 25px;

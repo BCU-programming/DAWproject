@@ -26,9 +26,8 @@
 }
 
 body {
-  background: url("../imgs/배경.jpg") no-repeat;
-  background-size: cover;
-  margin: 0%;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: var(--font-regular);
 }
 
 .daw-logo {
@@ -52,7 +51,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 
 .hamberger_img {
   width: 25px;

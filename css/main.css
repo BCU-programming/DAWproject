@@ -1,6 +1,7 @@
 body {
-  font-family: "Nanum Gothic", sans-serif;
-  font-weight: var(--font-regular);
+  background: url("../imgs/배경.jpg") no-repeat;
+  background-size: cover;
+  margin: 0%;
 }
 
 .main_container {
