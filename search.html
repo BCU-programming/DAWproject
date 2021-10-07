@@ -9,7 +9,7 @@
     <link rel="icon" href="imgs/나뭇잎.png">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="main.js"></script>
+    <script src="js/search.js"></script>
     <title>Daw</title>
 </head>
 <body>
@@ -25,5 +25,18 @@
             <img src="imgs/돋보기.png" alt="" class="search_icon" width="40" height="40">
         </button>
     </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <span class="dropbtn_icon"></span>
+          <span class="dropbtn_content">정렬</span>
+          <span class="dropbtn_click" style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
+            onclick="dropdown()"><img src="imgs/드롭다운 파랑.png" class="dropbtn_click" alt=""></span>
+        </button>
+        <div class="dropdown-content">
+          <div class="type" onclick="showMenu(this.innerText)">최신순</div>
+          <div class="type" onclick="showMenu(this.innerText)">인기순</div>
+          <div class="type" onclick="showMenu(this.innerText)">모든글</div>
+        </div>
+      </div>
 </body>
 </html>
