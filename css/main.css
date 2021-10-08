@@ -4,6 +4,8 @@ body {
   margin: 0%;
 }
 
+
+
 .main_container {
   margin: auto;
   margin-top: 150px;
@@ -94,13 +96,12 @@ a:visited {
   color: var(--color-white);
 }
 
-
 /* hamburger menu */
 
 .menu_trigger,
 .menu_trigger span {
   display: inline-block;
-  transition: all 0.4;
+  transition: all 0.4s;
   box-sizing: border-box;
 }
 
@@ -133,7 +134,7 @@ a:visited {
   bottom: 7px;
 }
 
-
+/* js에 추가할 클래스 */
 .menu_trigger.active span:nth-of-type(1) {
   transform: translateY(10px) rotate(-45deg);
 }
@@ -145,3 +146,4 @@ a:visited {
 .menu_trigger.active span:nth-of-type(3) {
   transform: translateY(-10px) rotate(45deg);
 }
+
