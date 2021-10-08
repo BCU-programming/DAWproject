@@ -2,8 +2,8 @@ body {
   background: url("../imgs/배경.jpg") no-repeat;
   background-size: cover;
   margin: 0%;
+  z-index: 1;
 }
-
 
 
 .main_container {
@@ -26,6 +26,7 @@ body {
   float: left;
   background: var(--color-white);
   font-size: var(--font-micro);
+  border-radius: 5px 0 0 5px;
 }
 
 input::placeholder {
@@ -38,12 +39,13 @@ input::placeholder {
   height: 70px;
   border: 0px;
   background: var(--color-blue-green);
-  opacity: 1;
+  opacity: 0.8;
   cursor: pointer;
+  border-radius: 0 5px 5px 0px;
 }
 
 .search_button:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .search_icon {
@@ -89,12 +91,24 @@ input::placeholder {
   margin-right: 15px;
 }
 
+.login_join_info .goto_login {
+  margin-right: 20px;
+}
+
+.login_join_info .goto_join {
+  margin-right: 20px;
+}
+
 a:link,
 a:visited {
-  margin-right: 20px;
   text-decoration: none;
   color: var(--color-white);
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 /* hamburger menu */
 
@@ -120,6 +134,7 @@ a:visited {
   height: 5px;
   background-color: var(--color-white);
   border-radius: 4px;
+  opacity: 1;
 }
 
 .menu_trigger span:nth-of-type(1){
@@ -147,3 +162,38 @@ a:visited {
   transform: translateY(-10px) rotate(45deg);
 }
 
+/* Menu Wrap */
+
+.menu_wrap {
+  background-color: var(--color-white);
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: -500px;
+  width: 500px;
+  height: 1000px; /* 수정 필요 */
+  opacity: 0.8;
+  transition: left 0.3s eaee-in;
+}
+
+.menu_wrap.on {
+  left: 0;
+}
+
+.menu_wrap ul {
+  font-family: 'Abhaya Libre', serif;
+  list-style: none;
+  font-size:  var(--font-small);
+  text-align: right;
+  position: relative;
+  top: 30%;
+  padding-right: 50px;
+}
+
+.menu_wrap ul li {
+  margin-bottom: 70px;
+}
+
+.menu_wrap ul li a {
+  color: var(--color-black);
+}
