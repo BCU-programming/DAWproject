@@ -9,15 +9,49 @@
     <link rel="icon" href="imgs/나뭇잎.png">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/hamburger_menu.js"></script>
     <script src="js/search.js"></script>
     <title>Daw</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="hamberger_btn">
-            
+      <!--Navbar-->
+      <nav class="navbar">
+        <div class="navbar_container">
+
+            <!--Hamburger Menu-->
+            <div class="menu_wrap">
+                <ul class="menu_list">
+                    <li class="menu_introduction">
+                        <a href="" class="introduction">Introduction</a>
+                    </li>
+                    <li class="menu_aboutus">
+                        <a href="" class="aboutus">About us</a>
+                    </li>
+                    <li class="menu_mypage">
+                        <a href="" class="mypage">My page</a>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <a class="menu_trigger" href="#" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="daw_img">
+                <img src="imgs/DAW 하양.png" alt="DAW로고" class="daw-logo">
+            </div>
+            <div class="login_join_info">
+                <a href="login.html" class="goto_login">
+                    <p>로그인</p>
+                </a>
+                <p>|</p>
+                <a href="join.html" class= "goto_join">
+                    <p>회원가입</p>
+                </a>
+            </div> 
         </div>
-        <img src="imgs/DAW 파랑.png" alt="DAW로고" class="daw-logo">
     </nav>
     <div class="search_bar">
         <input type="text" class="search_text" placeholder="지역 입력">
