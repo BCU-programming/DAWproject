@@ -94,10 +94,18 @@ input::placeholder {
 
 .slide {
   display: flex;
-  justify-content: space-around;
 }
 
 .left_arrow,
 .right_arrow {
   width: 90px;
+}
+
+.content_img {
+  width: 350px;
+  height: 220px;
+}
+
+.content_heart {
+  width: 60px;
 }
