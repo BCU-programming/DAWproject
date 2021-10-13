@@ -91,3 +91,13 @@ input::placeholder {
 .dropdown-content.show {
   display: block;
 }
+
+.slide {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left_arrow,
+.right_arrow {
+  width: 90px;
+}
