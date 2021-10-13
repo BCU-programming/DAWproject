@@ -10,5 +10,19 @@ window.onload=()=>{
             menuWrap.classList.add("on");
         }
     });
+
+    const showDropdown = document.querySelector(".dropdown_menu").classList.toggle("show");
+    showDropdown.addEventListener('onClick', (event) =>{
+        if(!event.target.matches('.dropdown_btn')){
+            let dropdowns = document.querySelector(".dropdown_menu");
+            let i;
+            for(int = 0; i <dropdowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if(openDropdown.classList.contains("show")){
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    });
     
 }
