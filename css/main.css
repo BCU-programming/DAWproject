@@ -108,3 +108,15 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+.info_container {
+  color: var(--color-white);
+  display: flex;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.member_info {
+  margin-right: 20px;
+}
