@@ -109,14 +109,23 @@ a:hover {
   text-decoration: underline;
 }
 
+/* 오른쪽 정보 */
 .info_container {
   color: var(--color-white);
   display: flex;
   position: absolute;
   top:0;
   right: 0;
+  margin-right: 20px;
 }
 
 .member_info {
-  margin-right: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member_info .goto_mypage .member_profile_pic {
+  margin-right: 5px;
 }
