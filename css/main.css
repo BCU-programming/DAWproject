@@ -120,10 +120,11 @@ a:hover {
 }
 
 .member_info {
-  margin-right: 10px;
+  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50px;
 }
 
 .member_info .goto_mypage .member_profile_pic {
@@ -133,6 +134,7 @@ a:hover {
 .dropdown_click {
   margin-left: 5px;
 }
+
 
   /* dropdown */
 
@@ -152,15 +154,15 @@ a:hover {
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
-    top: 27px;
+    top: 25px;
     right: 4px;
     width: 150px;
-    height: 105px;
+    height: 103px;
     z-index: 1;
   }
 
   .goto_logout {
-    padding-top: 15px;
+    padding-top: 13px;
   }
 
   .goto_logout::after{
@@ -191,4 +193,3 @@ a:hover {
   .show {
     display: block;
   }
-
