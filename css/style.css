@@ -7,6 +7,7 @@
   --color-blue-green: #125d98;
   --color-red: #ff0000;
   --color-gray: #767676;
+  --color-light-gray: #a8a8a8;
 
   /* Font size */
   --font-large: 60px;
@@ -57,7 +58,6 @@ body {
   height: 30px;
 }
 
-
 .login_join_info {
   position: absolute;
   top: 0;
@@ -91,15 +91,15 @@ body {
   opacity: 1;
 }
 
-.menu_trigger span:nth-of-type(1){
+.menu_trigger span:nth-of-type(1) {
   top: 8px;
 }
 
-.menu_trigger span:nth-of-type(2){
+.menu_trigger span:nth-of-type(2) {
   top: 18px;
 }
 
-.menu_trigger span:nth-of-type(3){
+.menu_trigger span:nth-of-type(3) {
   bottom: 7px;
 }
 
@@ -135,9 +135,9 @@ body {
 }
 
 .menu_wrap ul {
-  font-family: 'Abhaya Libre', serif;
+  font-family: "Abhaya Libre", serif;
   list-style: none;
-  font-size:  var(--font-small);
+  font-size: var(--font-small);
   text-align: right;
   position: relative;
   top: 30%;

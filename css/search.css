@@ -40,16 +40,20 @@ input::placeholder {
 }
 
 .dropbtn_click {
-  width: 20px;
-  margin-left: 10px;
+  width: 40px;
+  margin: 5px 0px 0px 10px;
   cursor: pointer;
+}
+
+.dropbtn_content {
+  font-size: var(--font-small);
 }
 
 .dropdown {
   display: block;
   width: 150px;
   margin-left: 130px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .dropbtn {
@@ -60,7 +64,7 @@ input::placeholder {
   background-color: transparent;
   color: var(--color-black);
   padding: 12px;
-  width: 120px;
+  width: 170px;
   text-align: left;
   z-index: 1;
   position: relative;
@@ -68,9 +72,9 @@ input::placeholder {
 .dropdown-content {
   display: none;
   background-color: #fcfcfc;
-  width: 120px;
+  width: 170px;
   border-radius: 4px;
-  height: 120px;
+  height: 190px;
   box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
 }
 
@@ -78,7 +82,7 @@ input::placeholder {
   display: flex;
   /* text-decoration: none; */
   color: rgb(37, 37, 37);
-  font-size: 12px;
+  font-size: var(--font-small);
   padding: 12px 24px;
 }
 
@@ -94,6 +98,19 @@ input::placeholder {
 
 .slide {
   display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slide_contents {
+  width: 1170px;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
 }
 
 .left_arrow,
@@ -101,11 +118,46 @@ input::placeholder {
   width: 90px;
 }
 
-.content_img {
+.content_imgs {
+  position: relative;
+}
+
+.content_background {
   width: 350px;
   height: 220px;
 }
 
 .content_heart {
-  width: 60px;
+  width: 40px;
+}
+
+.content_discription {
+  display: flex;
+  font-size: var(--font-micro);
+}
+
+.content_area {
+  margin: 0px 10px 0px 5px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.circle_now,
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0px 10px 0px 10px;
+}
+
+.circle_now {
+  background-color: var(--color-blue-green);
+}
+
+.circle {
+  background-color: var(--color-light-gray);
 }
