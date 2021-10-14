@@ -12,14 +12,17 @@ window.onload=()=>{
     });
 
     //열기
-    const dropdownBtn = document.querySelector(".dropdown_click");
-    dropdownBtn.addEventListener('click', (event) => {
+    function showDropdown() {
         document.querySelector(".dropdown_menu").classList.toggle("show");
+    }
+
+    const dropdownBtn = document.querySelector(".dropdown_click");
+    dropdownBtn.addEventListener('click', () => {
+        showDropdown();
     });
     
     //닫기
-    const showDropdown = document.querySelector(".dropdown_menu").classList.toggle("show");
-    showDropdown.addEventListener('onClick', (event) =>{
+    showDropdown.addEventListener('click', (event) =>{
         if(!event.target.matches('.dropdown_btn')){
             let dropdowns = document.querySelector(".dropdown_menu");
             for(let i = 0; i <dropdowns.length; i++) {
