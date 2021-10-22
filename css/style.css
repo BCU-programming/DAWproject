@@ -151,3 +151,10 @@ body {
 .menu_wrap ul li a {
   color: var(--color-black);
 }
+
+/* 텍스트 에디터 관련 */
+
+.post_container {
+  display: flex;
+  justify-content: center;
+}
