@@ -102,3 +102,10 @@ a:hover {
   .show {
     display: block;
   }
+
+  /* 텍스트 에디터 관련 */
+
+.post_container {
+  display: flex;
+  justify-content: center;
+}
