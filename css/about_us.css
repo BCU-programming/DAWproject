@@ -21,11 +21,28 @@ a:hover {
     text-decoration: underline;
 }
 
+.introduce {
+  position: relative;
+  top: -50px;
+}
+
+.introduce_logo {
+  position: absolute;
+  left: 47%;
+  top: -50px;
+}
+
+.introduce_us {
+  position: absolute;
+  left: 44%;
+  font-size: var(--font-micro);
+}
+
 
 .info_container {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 180px;
 }
 
 .info:nth-child(even){
@@ -49,7 +66,7 @@ a:hover {
   content: "";
   display: block;
   width: 120px;
-  margin-left: 170px;
+  margin-left: 120px;
   margin-top: 20px;
   border-bottom: 7px solid var(--color-blue-green);
 }
@@ -66,5 +83,5 @@ a:hover {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -30px;
+  bottom: -50px;
 }
