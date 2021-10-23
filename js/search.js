@@ -18,6 +18,7 @@ window.onload=()=>{
       dropbtn_content.innerText = value;
     }
   }
+  //dropbox
   window.onclick= (e)=>{
     if(!e.target.matches('.dropbtn_click')){
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -42,4 +43,69 @@ window.onload=()=>{
             menuWrap.classList.add("on");
         }
     });
+
+    //slide
+    db = [
+      {
+        imageName:"아무 사진.png",
+        content_area:"[제주]",
+        content_title:"혼자옵서예"
+      },
+      {
+        imageName:"아무 사진.png",
+        content_area:"[서울]",
+        content_title:"어서오세요"
+      },
+      {
+        imageName:"아무 사진.png",
+        content_area:"[제주]",
+        content_title:"혼자옵서예"
+      }
+    ]
   }
+
+//slide 선언
+class Slide_content {
+  imageName = "../img/";
+  content_area;
+  content_title;
+  constructor(
+    imageName,
+    content_area,
+    content_title
+  ){
+    this.imageName += imageName;
+    this.content_area = content_area;
+    this.content_title = content_title;
+  }
+  getElement = function() {
+    let slideContent = document.createElement("div");
+    let content_background = document.createElement("div");
+    let content_discription = document.createElement("div");
+    let content_heart = document.createElement("div");
+    let content_area = document.createElement("span");
+    let content_title = document.createElement("span");
+
+    slideContent.className = "slide_content";
+    content_background.className = "content_background";
+    content_background.style.backgroundImage = "url('"+this.imageName+"')";
+    content_discription.className = "content_discription";
+    content_heart.className = "content_heart";
+    content_area.className = "content_area";
+    content_title.className = "content_title";
+
+    content_background = this.content_background;
+    content_heart = this.content_heart;
+
+    content_discription.appendChild(content_heart);
+    content_discription.appendChild(content_background);
+    content_discription.appendChild(content_area);
+    content_discription.appendChild(content_title);
+
+    slideContent.appendChild(content_background);
+    slideContent.appendChild(content_discription);
+
+    return slideContent;
+
+  };
+}
