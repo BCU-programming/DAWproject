@@ -141,6 +141,7 @@ a:hover {
   align-items: center;
   position: relative;
   padding-top: 30px;
+  cursor: pointer;
 }
 
 .btn_square {
