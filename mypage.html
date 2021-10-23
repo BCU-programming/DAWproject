@@ -7,10 +7,9 @@
     <meta name="description" content="Daw : A blog-type travel site"/>
     <meta name="author" content="wlstn & ssddo"/>
     <link rel="icon" href="imgs/나뭇잎.png">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mypage.css">
     <script src="js/hamburger_menu.js"></script>
-    <script src="js/main.js"></script>
     <title>Daw</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!--Navbar-->
     <nav class="navbar">
         <div class="navbar_container">
 
@@ -47,51 +44,30 @@
             <div class="daw_img">
                 <img src="imgs/DAW 하양.png" alt="DAW로고" class="daw-logo">
             </div>
-            <div class="login_join_info">
-                <a href="login.html" class="goto_login">
-                    <p>로그인</p>
+
+            <div class="info_container">
+                <div class="member_info">
+                    <a href="" class="goto_mypage">
+                        <img src="imgs/프로필사진.png" alt="" class="member_profile_pic" width="30" height="30">
+                    </a>
+                    <span class="member_name">박일도</span>
+
+                    <div class="info_dropdown">
+                        <button class="dropdown_btn">
+                            <img src="imgs/드롭다운 하양.png" alt="" class="dropdown_click" width="15" height="10">
+                        </button>
+                        <div class="dropdown_menu">
+                            <a href="main.html" class="goto_logout">Logout</a>
+                            <a href="" class="goto_mypage">My page</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="writing.html" class= "goto_write">
+                    <p>글쓰기</p>
                 </a>
-                <p>|</p>
-                <a href="join.html" class= "goto_join">
-                    <p>회원가입</p>
-                </a>
-            </div> 
+            </div>
         </div>
     </nav>
-
-    <div class="main_container">
-        <div class="title">
-            <img src="imgs/제목 작.png" alt="">
-        </div>
-        <div class="search_bar">
-            <input type="text" class="search_text" placeholder="지역 입력">
-            <button class="search_button">
-                <img src="imgs/돋보기.png" alt="" class="search_icon" width="40" height="40">
-            </button>
-        </div>
-        
-        <div class="title_description">
-            <p>대한민국 전국 방방곡곡 여행 커뮤니티</p>
-        </div>
-        
-        <div class="main_end_container">
-            <div class="instagram_logo">
-                <a href="https://instagram.com/wlstnrla?utm_medium=copy_link" class="sujin_insta">
-                    <img src="imgs/인스타그램 로고.png" 
-                    alt="" class="insta_logo su">
-                </a>
-                
-                <a href="https://instagram.com/ssddo_?utm_medium=copy_link" class="seunghyun_insta">
-                    <img src="imgs/인스타그램 로고.png"
-                    alt="" class="insta_logo seung">
-                </a>
-                
-            </div>
-    
-            <div class="copyright">
-                <p>Copyrightⓒ DAW All rights reserved.</p>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
