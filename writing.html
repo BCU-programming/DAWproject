@@ -77,15 +77,29 @@
             </div>
         </div>
     </nav>
-    <div class = "post_container">
-        <textarea name="editordata" class="summernote"></textarea>
+
+    <div class="city_selectBtn">
+
     </div>
-    <script>
-        $('.summernote').summernote({
-            height: 600,
-            width: 1500,
-            lang: "ko-KR"
-        });
-    </script>
+    <div class="post_container">
+        <div class="post_title">
+            <input type="text" class = title_text placeholder="제목">
+        </div>
+        <div class = "post_writing">
+            <textarea name="editordata" class="summernote"></textarea>
+        </div>
+        <script>
+            $('.summernote').summernote({
+                height: 600,
+                width: 1000,
+                placeholder: "내용을 입력하세요",
+                lang: "ko-KR"
+            });
+        </script>
+    </div>
+    <div class="post_btn">
+        <div class="btn_square"></div>
+        <span class="btn_word">올리기</span>
+    </div>
 </body>
 </html>

@@ -1,5 +1,7 @@
 body {
-    margin: 0%;
+    font-family: "Nanum Gothic", sans-serif !important;
+    margin: 0;
+    padding: 0;
     z-index: 1;
 }
 
@@ -15,6 +17,10 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+.goto_write {
+  margin-top: 15px;
 }
 
 /* 오른쪽 정보 */
@@ -43,8 +49,6 @@ a:hover {
   margin-left: 5px;
 }
 
-
-  
   /* dropdown */
 
   .dropdown_btn {
@@ -105,7 +109,48 @@ a:hover {
 
   /* 텍스트 에디터 관련 */
 
-.post_container {
+.post_writing {
   display: flex;
   justify-content: center;
+}
+
+
+/* 그 외 */
+
+.post_title {
+  display: flex;
+  justify-content: center;
+}
+
+.title_text {
+  width: 40%;
+  height: 50px;
+  margin-bottom: 30px;
+  font-size: var(--font-micro);
+  border: 0;
+  outline: 0;
+}
+
+.title_text::placeholder {
+  font-size: var(--font-micro);
+}
+
+.post_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 30px;
+}
+
+.btn_square {
+  width: 100px;
+  height: 50px;
+  background-color: var(--color-blue-green);
+}
+
+.btn_word {
+  font-size: var(--font-micro);
+  position: absolute;
+  color: var(--color-white);
 }
