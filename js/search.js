@@ -1,4 +1,21 @@
 window.onload=()=>{
+  db = [
+    {
+      imageName:"아무 사진.JPG",
+      content_area:"[서울]",
+      content_title:"어서오세요"
+    },
+    {
+      imageName:"아무 사진.JPG",
+      content_area:"[제주]",
+      content_title:"혼자옵서예"
+    },
+    {
+      imageName:"나뭇잎.png",
+      content_area:"[제주]",
+      content_title:"혼자옵서예"
+    }
+  ]
     document.querySelector('.dropbtn_click').onclick = ()=>{
       dropdown();
     }
@@ -17,6 +34,14 @@ window.onload=()=>{
       dropbtn_icon.innerText = '';
       dropbtn_content.innerText = value;
     }
+    let parent_slide = document.getElementsByClassName("slide_contents")[0];
+     let foo;
+     for(let i = 0; i < db.length; i++) {
+       foo = new Slide_content(db[i].imageName,db[i].content_area,db[i].content_title)
+       parent_slide.prepend(foo.getElement());
+      }
+     console.log(foo)
+    
   }
   //dropbox
   window.onclick= (e)=>{
@@ -45,28 +70,13 @@ window.onload=()=>{
     });
 
     //slide
-    db = [
-      {
-        imageName:"아무 사진.png",
-        content_area:"[제주]",
-        content_title:"혼자옵서예"
-      },
-      {
-        imageName:"아무 사진.png",
-        content_area:"[서울]",
-        content_title:"어서오세요"
-      },
-      {
-        imageName:"아무 사진.png",
-        content_area:"[제주]",
-        content_title:"혼자옵서예"
-      }
-    ]
+    
+    console.log(db);
   }
 
 //slide 선언
 class Slide_content {
-  imageName = "../img/";
+  imageName = "../imgs/";
   content_area;
   content_title;
   constructor(
@@ -81,21 +91,24 @@ class Slide_content {
   getElement = function() {
     let slideContent = document.createElement("div");
     let content_background = document.createElement("div");
+    let content_img = document.createElement("img");
     let content_discription = document.createElement("div");
-    let content_heart = document.createElement("div");
+    let content_heart = document.createElement("img");
     let content_area = document.createElement("span");
     let content_title = document.createElement("span");
 
+    content_img.setAttribute("src",this.imageName);
     slideContent.className = "slide_content";
-    content_background.className = "content_background";
+    content_img.className = "content_background";
     content_background.style.backgroundImage = "url('"+this.imageName+"')";
     content_discription.className = "content_discription";
     content_heart.className = "content_heart";
     content_area.className = "content_area";
     content_title.className = "content_title";
-
-    content_background = this.content_background;
-    content_heart = this.content_heart;
+    content_heart.setAttribute("src","../imgs/빈하트.png")
+    content_area.textContent = this.content_area;
+    content_title.textContent = this.content_title
+    
 
     content_discription.appendChild(content_heart);
     content_discription.appendChild(content_background);
@@ -103,9 +116,12 @@ class Slide_content {
     content_discription.appendChild(content_title);
 
     slideContent.appendChild(content_background);
+    slideContent.appendChild(content_img);
     slideContent.appendChild(content_discription);
-
+    
     return slideContent;
 
   };
 }
+
+//let c = new Slide_content(db[])
