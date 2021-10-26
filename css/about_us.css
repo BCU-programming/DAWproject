@@ -32,13 +32,6 @@ a:hover {
   top: -50px;
 }
 
-.introduce_us {
-  position: absolute;
-  left: 44%;
-  font-size: var(--font-micro);
-}
-
-
 .ourInfo {
   display: flex;
   justify-content: center;
