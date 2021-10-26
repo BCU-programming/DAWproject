@@ -11,9 +11,24 @@ window.onload=()=>{
       content_title:"혼자옵서예"
     },
     {
-      imageName:"나뭇잎.png",
-      content_area:"[제주]",
-      content_title:"혼자옵서예"
+      imageName:"아무 사진.JPG",
+      content_area:"[인천]",
+      content_title:"어서오세요"
+    },
+    {
+      imageName:"아무 사진.JPG",
+      content_area:"[인천]",
+      content_title:"어서오세요"
+    },
+    {
+      imageName:"아무 사진.JPG",
+      content_area:"[인천]",
+      content_title:"어서오세요"
+    },
+    {
+      imageName:"아무 사진.JPG",
+      content_area:"[인천]",
+      content_title:"어서오세요"
     }
   ]
     document.querySelector('.dropbtn_click').onclick = ()=>{
