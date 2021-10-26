@@ -98,3 +98,37 @@ body {
 .join_btn:hover {
   opacity: 1;
 }
+
+
+/* 넷바 우측 */
+
+.login_btn:hover {
+  opacity: 1;
+}
+
+.login_join_info {
+  display: flex;
+}
+
+.login_join_info > a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.login_join_info > a:hover {
+  text-decoration: underline;
+  color: var(--color-white);
+}
+
+.login_join_info > p {
+  color: var(--color-white);
+  margin-right: 15px;
+}
+
+.login_join_info .goto_login {
+  margin-right: 20px;
+}
+
+.login_join_info .goto_join {
+  margin-right: 20px;
+}
