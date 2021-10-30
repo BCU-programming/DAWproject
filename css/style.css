@@ -127,6 +127,7 @@ body {
   width: 500px;
   height: 1000px; /* 수정 필요 */
   opacity: 0.8;
+
   transition: left 0.3s eaee-in;
 }
 

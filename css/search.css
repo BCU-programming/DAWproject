@@ -51,6 +51,7 @@ input::placeholder {
 
 .dropdown {
   display: block;
+
   width: 150px;
   margin-left: 130px;
   margin-top: 30px;
@@ -70,7 +71,6 @@ input::placeholder {
   position: relative;
 }
 .dropdown-content {
-  display: none;
   background-color: #fcfcfc;
   width: 170px;
   border-radius: 4px;
@@ -99,14 +99,13 @@ input::placeholder {
 .slide {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
   flex-direction: row;
   align-items: center;
 }
 
 .slide_contents {
-  width: 1170px;
-  height: 550px;
+  width: 70%;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

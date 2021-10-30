@@ -31,15 +31,29 @@ window.onload=()=>{
       content_title:"어서오세요"
     }
   ]
-    document.querySelector('.dropbtn_click').onclick = ()=>{
-      dropdown();
-    }
-    document.getElementsByClassName('type').onclick = ()=>{
-      showMenu(value);
-    };
-    dropdown = () => {
-      var v = document.querySelector('.dropdown-content');
-      v.classList.toggle('show');
+  // dropbox
+    // document.querySelector('.dropbtn_click').onclick = ()=>{
+    //   dropdown();
+    // }
+    // document.getElementsByClassName('type').onclick = ()=>{
+    //   showMenu(value);
+    // };
+    // dropdown = () => {
+    //   var v = document.querySelector('.dropdown-content');
+      
+    //     v.classList.toggle('show');
+  
+    // }
+
+    let dropdown_content = document.getElementsByClassName("dropdown-content")[0]
+    dropdown_content.style.visibility = "hidden";
+    let v = document.querySelector('.dropbtn_click');
+    v.onclick = () =>{
+      if(dropdown_content.style.visibility == "hidden") {
+        dropdown_content.style.visibility = "visible"
+      }else{
+        dropdown_content.style.visibility = "hidden"
+      }
     }
 
     showMenu=(value)=>{
@@ -48,6 +62,7 @@ window.onload=()=>{
 
       dropbtn_icon.innerText = '';
       dropbtn_content.innerText = value;
+      dropdown_content.style.visibility = "hidden"
     }
     let parent_slide = document.getElementsByClassName("slide_contents")[0];
      let foo;
@@ -55,7 +70,7 @@ window.onload=()=>{
        foo = new Slide_content(db[i].imageName,db[i].content_area,db[i].content_title)
        parent_slide.prepend(foo.getElement());
       }
-     console.log(foo)
+     
     
   }
   //dropbox
@@ -82,6 +97,7 @@ window.onload=()=>{
         else {
             menuWrap.classList.add("on");
         }
+        
     });
 
     //slide

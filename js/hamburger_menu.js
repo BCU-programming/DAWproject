@@ -1,15 +1,18 @@
 window.onload=()=>{
     const menuTrigger = document.querySelector('.menu_trigger');
     const menuWrap = document.querySelector(".menu_wrap");
-    menuTrigger.addEventListener('click', (event)=> {
+     menuTrigger.addEventListener('click', (event)=> {
         event.currentTarget.classList.toggle('active')
         if(menuWrap.classList.contains("on")) {
             menuWrap.classList.remove("on");
         }
         else {
             menuWrap.classList.add("on");
+            menuWrap.classList.
         }
     });
+    let menu_trigger = document.getElementsByClassName("menu_trigger")[0];
+    let menu_wrap = doucmnet.getElementsByClassName("menu_wrap")[0]
 
     //열기
     function showDropdown() {
