@@ -8,9 +8,9 @@ window.onload=()=>{
         }
         else {
             menuWrap.classList.add("on");
-            menuWrap.classList.
         }
     });
+
     let menu_trigger = document.getElementsByClassName("menu_trigger")[0];
     let menu_wrap = doucmnet.getElementsByClassName("menu_wrap")[0]
 
