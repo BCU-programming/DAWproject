@@ -1,5 +1,5 @@
 body {
-  background: url("../imgs/배경.jpg") no-repeat;
+  background: url("/imgs/배경.jpg") no-repeat;
   background-size: cover;
   margin: 0%;
   z-index: 1;
