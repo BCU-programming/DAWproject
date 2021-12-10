@@ -7,10 +7,10 @@
     <meta name="description" content="Daw : A blog-type travel site"/>
     <meta name="author" content="wlstn & ssddo"/>
     <link rel="icon" href="imgs/나뭇잎.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/join.css">
-    <script src="main.js"></script>
-    <script src="js/hamburger_menu.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/join.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/hamburger_menu.js"></script>
     <title>Daw</title>
 </head>
 <body>
@@ -26,10 +26,10 @@
                         <a href="" class="introduction">Introduction</a>
                     </li>
                     <li class="menu_aboutus">
-                        <a href="" class="aboutus">About us</a>
+                        <a href="/about_us" class="aboutus">About us</a>
                     </li>
                     <li class="menu_mypage">
-                        <a href="" class="mypage">My page</a>
+                        <a href="/mypage" class="mypage">My page</a>
                     </li>
                 </ul>
                 
@@ -44,7 +44,7 @@
                 <img src="imgs/DAW 하양.png" alt="DAW로고" class="daw-logo">
             </div>
             <div class="login_join_info">
-                <a href="login.html" class="goto_login">
+                <a href="/login" class="goto_login">
                     <p>로그인</p>
                 </a>
                 <p>|</p>
@@ -98,9 +98,11 @@
                 <input type="email" id="email" placeholder="이메일">
             </label>
         </div>
-        <button type="button" onclick="location.href='login.html'" class="join_btn" >
-            완료
-        </button>
+        <a href="/login">
+            <button type="button" onclick="location.href='login.html'" class="join_btn" >
+                완료
+            </button>
+        </a>
     </div>
 </body>
 </html>
