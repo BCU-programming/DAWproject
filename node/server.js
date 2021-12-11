@@ -11,6 +11,8 @@ const mypage = require('./router/js/mypage');
 const writing = require('./router/js/r_writing');
 const search = require('./router/js/r_search');
 
+const bodyParser = require('body-parser');
+
 app.set('port', process.env.PORT || 3100);
 
 // server와 browser 연결될 때까지 기다리는 것
@@ -19,9 +21,11 @@ app.listen(app.get('port'),() => {
 });
 
 // 브라우저 뜨는 화면
-app.get('/main', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './main.html'));
 });
+
+app.use(bodyParser.urlencoded ({extended : true}));
 
 
 app.use('/login', login);
@@ -29,7 +33,13 @@ app.use('/after', afterLogin);
 app.use('/join', join);
 app.use('/about_us', aboutUs);
 app.use('/mypage', mypage);
-app.use('/writing', writing);
 app.use('/search', search);
+
+//글쓰기
+app.use('/writing', writing);
+
+app.post('/quotes', (req, res) => {
+    console.log(req.body);
+});
 
 app.use(express.static(__dirname + '/public'));
