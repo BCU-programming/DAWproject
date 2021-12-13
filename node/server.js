@@ -10,8 +10,11 @@ const aboutUs = require('./router/js/aboutUs');
 const mypage = require('./router/js/mypage');
 const writing = require('./router/js/r_writing');
 const search = require('./router/js/r_search');
-
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const MongoClient = require('mongodb').MongoClient;
+const url = 'mongodb+srv://ssddo:f8q9brXMWTj3eHL@daw.i6ldj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+
 
 app.set('port', process.env.PORT || 3100);
 
@@ -38,46 +41,35 @@ app.use('/search', search);
 //글쓰기
 app.use('/writing', writing);
 
-app.post('/quotes', (req, res) => {
-    console.log(req.body);
-});
-
 app.use(express.static(__dirname + '/public'));
 
 //mongoDB 연동
+MongoClient.connect(url, { useUnifiedTopology: true} , function(err, database) {
+	if(err) {
+		console.error("MongoDB 연결 실패", err);
+		return;
+	}
+	console.log("Connected to Database")
+	const db = database.db('daw-project');
+	const quotesCollection = db.collection('quotes');
 
-//const server = express();
-/*
-app.listen(3100, (err)=>{
-    if(err){
-        return console.log(err);
-    } else {
-        mongoose.connect(progress.env.MONGODB_URL, {useNewUrlParser: true}, (err)=>{
-            if(err){
-                console.log(err);
-            } else {
-                console.log('연결에 성공!');
-            }
-        });
-    }
-})*/
-
-const mongoose = require('mongoose');
-/*
-mongoose.connect(progress.env.MONGODB_URL, {useNewUrlParser: true}, (err)=>{
-    if(err){
-        console.log(err);
-    } else {
-        console.log('연결에 성공!');
-    }
+	app.post('/quotes', (req, res) => {
+		quotesCollection.insertOne(req.body)
+		.then(result => {
+			res.redirect('/')
+		})
+		.catch(error => console.error(error))
+	});
 });
-*/
 
+/*
 mongoose.connect('mongodb+srv://ssddo:f8q9brXMWTj3eHL@daw.i6ldj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 		.then(() => console.log('MongoDB Connected...'))
-		.catch(err => console.log(err))
+		.catch(err => console.log(err));
+*/
 
 
+/*
 const post = require('./models/post');
 require('dotenv').config({path:'variables.env'});
 app.get('/',(req,res)=>{
@@ -98,4 +90,4 @@ app.get('/',(req,res)=>{
             })
         })
 })
-
+*/
